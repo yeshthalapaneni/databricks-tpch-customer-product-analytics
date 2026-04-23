@@ -1,0 +1,21 @@
+# Requirements for Databricks TPC-H Analytics Project
+
+# Core Spark (already available in Databricks runtime, listed for reference)
+pyspark==3.5.0
+
+# Delta Lake (included in Databricks, optional for local testing)
+delta-spark==3.2.0
+
+# AWS (for S3 interaction if running locally)
+boto3==1.34.131
+
+# Data handling
+pandas==2.2.2
+numpy==1.26.4
+
+# Optional utilities
+python-dateutil==2.9.0
+
+# Notes:
+# - In Databricks, most dependencies are pre-installed via runtime
+# - This file is mainly useful for local development or CI environments
